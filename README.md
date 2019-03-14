@@ -5,10 +5,6 @@ A Genetic Path Finder to find path to target while avoiding obstacles, written i
 
 This is an implementation of the Evloutionary Genetic Algorithm to the problem of an agent finding a path to a target through obstacles.
 
-## Libraries Used
-
-The code uses p5.js library.
-
 ## Setup of Environment
 
 A fixed size population of agents is created. A fixed number of obstacles at specified positions but having random velocities is created.
@@ -32,3 +28,7 @@ The user can click anywhere on the screen to move the target to that location an
 - [ ] Allow the user to specify the velocities of obstalces.
 - [ ] Allow the user to change parameters like mutation rate and population size dynamically.
 - [ ] Record the best individual of each generation.
+
+## Libraries Used
+
+The code uses p5.js library.
