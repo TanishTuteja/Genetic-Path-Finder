@@ -2,5 +2,5 @@
 
 - [ ] Allow user to make new obstacles.
 - [ ] Allow the user to specify the velocities of obstacles.
-- [ ] Allow the user to change parameters like mutation rate and population size dynamically.
+- [x] Allow the user to change parameters like mutation rate and population size dynamically.
 - [ ] Record the best individual of each generation.
