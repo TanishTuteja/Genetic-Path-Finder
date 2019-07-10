@@ -1,6 +1,8 @@
 # Genetic-Path-Finder
 A Genetic Path Finder to find path to target while avoiding obstacles, written in JavaScript using p5.js
 
+To see the code working, [click here.](https://tanishtuteja.github.io/Genetic-Path-Finder/)
+
 ## Introduction
 
 This is an implementation of the Evolutionary Genetic Algorithm to the problem of an agent finding a path to a target through obstacles.
