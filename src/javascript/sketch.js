@@ -12,14 +12,12 @@ function setup() {
   this.target = createVector(width / 2, 50);
   this.targetSize = 40;
 
+  this.maxObsWidth = width / 4;
+  this.maxObsHeight = height / 4;
+
   this.obstacles = [];
-  this.obstacles.push(new Obstacle(createVector(100, 200), 200, 50));
-  this.obstacles.push(new Obstacle(createVector(400, 300), 200, 50));
 
-  this.obstacles.push(new Obstacle(createVector(300, 500), 50, 100));
-
-  this.obstacles.push(new Obstacle(createVector(700, 300), 200, 50));
-  this.obstacles.push(new Obstacle(createVector(1000, 300), 200, 50));
+  makeRandomObstacles(3);
 
   this.headerDiv = createDiv("<h3><center> Modify Parameters </center></h3>");
   this.headerDiv.position(windowWidth / 2, 40);
@@ -86,4 +84,20 @@ function mousePressed() {
     this.target.x = mouseX;
     this.target.y = mouseY;
   }
+}
+
+function makeRandomObstacles(number) {
+
+  for (let i = 0; i < number; i++) {
+
+    let obsWidth = random(maxObsWidth);
+    let obsHeight = random(maxObsHeight);
+
+    let x = random(width - obsWidth);
+    let y = random(height - obsHeight);
+
+    this.obstacles.push(new Obstacle(createVector(x, y), obsWidth, obsHeight));
+
+  }
+
 }
