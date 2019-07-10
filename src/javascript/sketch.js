@@ -9,7 +9,8 @@ function setup() {
   this.population = new Population(this.defaultPopSize, this.lifetime, this.defaultMutationRate);
   this.framec = 0;
 
-  this.target = createVector(width / 2, 50);
+  this.targetSize = 40;
+  this.target = createVector(this.targetSize + random(width - 2 * this.targetSize), this.targetSize + random(height - 2 * this.targetSize));
   this.targetSize = 40;
 
   this.maxObsWidth = width / 4;
