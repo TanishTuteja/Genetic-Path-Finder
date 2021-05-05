@@ -1,3 +1,5 @@
+# *Note : This repo has been archived now. No further development is to be expected.* #
+
 # Genetic-Path-Finder
 A Genetic Path Finder to find path to target while avoiding obstacles, written in JavaScript using p5.js
 
